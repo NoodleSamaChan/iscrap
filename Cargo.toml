@@ -1,0 +1,10 @@
+[package]
+name = "i-scrap"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = {version = "1.38.0", features = ["sync", "macros", "io-util", "rt", "time"], default-features = false}
+getrandom = {version = "0.2.15", features = ["js"]}
+reqwest = { version = "0.12.3", optional = true, default-features = false, features = ["rustls-tls", "http2"] }
+html5ever = "0.27.0"
